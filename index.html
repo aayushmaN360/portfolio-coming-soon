@@ -1,10 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Coming Soon</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Coming Soon</title>
+<style>
+  body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #121212;
+    color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .spinner {
+    margin: 20px;
+    width: 80px;
+    height: 80px;
+    border: 10px solid #333;
+    border-top: 10px solid #61dafb;
+    border-radius: 50%;
+    animation: spin 1.3s linear infinite;
+  }
+  @keyframes spin {
+    0% { transform: rotate(0deg);}
+    100% { transform: rotate(360deg);}
+  }
+  h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+  }
+  p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #888;
+  }
+</style>
 </head>
-<body style="text-align:center; padding:50px; font-family:sans-serif;">
-  <h1>Stay tuned!</h1>
-  <p>We will be live soon at aayushmankhatiwada.com.np 🚀</p>
+<body>
+  <h1>COMING SOON</h1>
+  <div class="spinner"></div>
+  <p>Please wait while we prepare something awesome...</p>
 </body>
 </html>
